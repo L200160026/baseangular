@@ -1,0 +1,71 @@
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Category</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Category v1</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- Small boxes (Stat box) -->
+        <div class="row">
+          <div class="col-12">
+            <!-- Horizontal Form -->
+            <div class="card card-info">
+              <div class="card-header">
+                <h3 class="card-title">Form Input</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form class="form-horizontal">
+                <div class="card-body">
+                  
+                  <div class="form-group row">
+                    <label for="_name_" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="_name_" class="form-control" id="_name_" placeholder="Name" #categoryName>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="_description_" class="col-sm-2 col-form-label">Description</label>
+                    <div class="col-sm-10">
+                      <input type="text" name="_description_" class="form-control" id="_description_" placeholder="Description" #categoryDescription>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <div class="form-group row">
+                    <div class="col-md-6 col-sm-6 offset-md-3">
+                      <button type="button" class="btn btn-warning" (click)="goBack()">Cancel</button>
+                      <button type="reset" class="btn btn-info" id="_reset_">Reset</button>
+                      <button type="submit" class="btn btn-success" (click)="add(categoryName.value, categoryDescription.value); categoryName.value=''; categoryDescription.value='' ">Submit</button>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-footer -->
+              </form>
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+        <!-- /.row -->
+
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
